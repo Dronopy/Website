@@ -10,6 +10,11 @@ $(function() {
 	$("#alert-close").click(function(e) {
 		hideAlert();
 	});
+	$(".do-wobble").mouseenter(function(e) {
+		$(e.target).addClass('animated wobble');
+	}).on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e) {
+		$(e.target).removeClass('animated wobble');
+	});
 
 	$(window).load(function() {
 		$(".content").fadeTo(1000, 1, 'swing', function() {

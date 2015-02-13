@@ -359,10 +359,19 @@ footer .navbar .navbar-nav>li>a:hover
 
 /** how page **/
 
+.img-container
+{
+}
+
 .img-how
 {
 	width: 100%;
 	height: 200px;
+}
+.img-how img
+{
+	width: 100%;
+	height: 190px;
 }
 .img-tall
 {
