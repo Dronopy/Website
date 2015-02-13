@@ -2,15 +2,15 @@ var DEBUG = true;
 $(function() {
 
 	$(".login-btn").click(function(e) {
-		window.location.href = "http://drone.sharetribe.com/en/login";
+		window.location.href = "https://drones.dronopy.com/en/login";
 	});
 	$(".signup-btn").click(function(e) {
-		window.location.href = "http://drone.sharetribe.com/en/signup";
+		window.location.href = "https://drones.dronopy.com/en/signup";
 	});
 	$("#alert-close").click(function(e) {
 		hideAlert();
 	});
-	$(".do-wobble").mouseenter(function(e) {
+	$(".do-wobble").click(function(e) {
 		$(e.target).addClass('animated wobble');
 	}).on('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(e) {
 		$(e.target).removeClass('animated wobble');
