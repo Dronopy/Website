@@ -50,7 +50,7 @@
 
 	function valid_phone($txt)
 	{
-		$exp = '/^[0-9 -+.]+$/';
+		$exp = '/^[0-9extEXT +.()-]{10,50}$/';
 		return preg_match($exp, $txt);
 	}
 

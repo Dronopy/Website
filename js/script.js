@@ -35,6 +35,10 @@ $(function() {
 		}
 	});
 
+	$.validator.addMethod("phone", function(value, element) {
+		return this.optional(element) || /^[0-9extEXT +.()\-]{10,50}$/.test(value);
+	}, "Please enter a valid phone number format");
+
 	$("#contactform").validate({
 		debug: DEBUG,
 		rules: {
@@ -43,9 +47,11 @@ $(function() {
 				minlength: 2
 			},
 			formEmail: {
+				email: true,
 				required: true
 			},
 			formPhone: {
+				phone: true,
 				minlength: 10
 			},
 			formLocation: {
