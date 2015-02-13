@@ -7,10 +7,11 @@ body, html
 }
 body
 {
-	font-family: 'Dosis', sans-serif;
+	/*font-family: 'Dosis', sans-serif;*/
 	/*font-family: 'Cabin Condensed', sans-serif;*/
 	/*font-family: 'Oxygen', sans-serif;*/
 	/*font-family: 'Fjalla One', sans-serif;*/
+	font-family: 'Arial';
 }
 
 header, footer
@@ -110,21 +111,21 @@ footer
 
 .btn-default
 {
-	border: 2px #000 solid;
+	border: 1px #000 solid;
 }
 .btn-default:hover,.btn-default:focus
 {
-	border: 2px #000 solid;
+	border: 1px #000 solid;
 	color: #fff;
 	background-color: #000;
 }
 .btn-primary
 {
-	border: 2px #000 solid;
+	border: 1px #337ab7 solid;
 }
 .btn-primary:hover,.btn-primary:focus
 {
-	border: 2px #000 solid;
+	border: 1px #000 solid;
 	color: #fff;
 	background-color: #000;
 }
