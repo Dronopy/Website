@@ -78,7 +78,19 @@ footer
 .bg-panel-primary
 {
 	color: #fff;
-	background: #0CB0FF;
+	background: #0B92D3;
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-radial-gradient(center, circle farthest-corner, #0B92D3 0%, #0CB0FF 50%, #0B92D3 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-radial-gradient(center, circle farthest-corner, #0B92D3 0%, #0CB0FF 50%, #0B92D3 100%);
+	/* Opera */ 
+	background-image: -o-radial-gradient(center, circle farthest-corner, #0B92D3 0%, #0CB0FF 50%, #0B92D3 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(radial, center center, 0, center center, 505, color-stop(0, #0B92D3), color-stop(0.5, #0CB0FF), color-stop(1, #0B92D3));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-radial-gradient(center, circle farthest-corner, #0B92D3 0%, #0CB0FF 50%, #0B92D3 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: radial-gradient(circle farthest-corner at center, #0B92D3 0%, #0CB0FF 50%, #0B92D3 100%);
 	/*background: -moz-linear-gradient(-45deg,  #337ab7 0%, #286090 100%);
 	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#337ab7), color-stop(100%,#286090));
 	background: -webkit-linear-gradient(-45deg,  #337ab7 0%,#286090 100%);
@@ -92,6 +104,20 @@ footer
 {
 	color: #fff;
 	background: #5FBAE6;
+	/* IE10 Consumer Preview */ 
+	/* Note: This gradient may render differently in browsers that don't support the unprefixed gradient syntax */
+	/* IE10 Consumer Preview */ 
+	background-image: -ms-linear-gradient(top left, #0B92D3 0%, #0CB0FF 50%, #0B92D3 100%);
+	/* Mozilla Firefox */ 
+	background-image: -moz-linear-gradient(top left, #0B92D3 0%, #0CB0FF 50%, #0B92D3 100%);
+	/* Opera */ 
+	background-image: -o-linear-gradient(top left, #0B92D3 0%, #0CB0FF 50%, #0B92D3 100%);
+	/* Webkit (Safari/Chrome 10) */ 
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #0B92D3), color-stop(0.5, #0CB0FF), color-stop(1, #0B92D3));
+	/* Webkit (Chrome 11+) */ 
+	background-image: -webkit-linear-gradient(top left, #0B92D3 0%, #0CB0FF 50%, #0B92D3 100%);
+	/* W3C Markup, IE10 Release Preview */ 
+	background-image: linear-gradient(to bottom right, #0B92D3 0%, #0CB0FF 50%, #0B92D3 100%);
 	/*background: -moz-linear-gradient(-45deg,  #5bc0de 0%, #31b0d5 100%);
 	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#5bc0de), color-stop(100%,#31b0d5));
 	background: -webkit-linear-gradient(-45deg,  #5bc0de 0%,#31b0d5 100%);
@@ -134,7 +160,18 @@ footer
 	color: #000;
 	background-color: #fff;
 }
-
+.btn-secondary
+{
+	border: 1px transparent;
+	background-color: transparent;
+	color: #fff;
+}
+.btn-secondary:hover,.btn-secondary:focus
+{
+	border: 1px #fff solid;
+	color: #000;
+	background-color: #fff;
+}
 
 /** nav bar **/
 .navbar
@@ -330,7 +367,7 @@ footer .navbar .navbar-nav>li>a:hover
 @media (min-width: 992px) {
 	.homejumbotext
 	{
-		top: 260px;
+		top: 400px;
 	}
 }
 
@@ -351,6 +388,7 @@ footer .navbar .navbar-nav>li>a:hover
 	.heading-top-flush
 	{
 		margin-top: 0px;
+		font-weight: bold;
 	}
 }
 
