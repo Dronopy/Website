@@ -11,7 +11,10 @@ body
 	/*font-family: 'Cabin Condensed', sans-serif;*/
 	/*font-family: 'Oxygen', sans-serif;*/
 	/*font-family: 'Fjalla One', sans-serif;*/
-	font-family: 'Arial';
+	/*font-family: 'Arial';*/
+	font-family: 'Muli';
+	/*font-family: 'Roboto';*/
+	/*font-family: 'Lato';*/
 }
 
 header, footer
@@ -157,8 +160,8 @@ footer
 .btn-primary:hover,.btn-primary:focus
 {
 	border: 1px #fff solid;
-	color: #000;
-	background-color: #fff;
+	color: #fff;
+	background-color: transparent;
 }
 .btn-secondary
 {
@@ -172,6 +175,20 @@ footer
 	color: #000;
 	background-color: #fff;
 }
+.btn-big
+{
+	border: 1px #0B92D3 solid;
+	background-color: #0B92D3;
+	color: #fff;
+	font-size: 25px;
+}
+.btn-big:hover,.btn-big:focus
+{
+	border: 1px #0B92D3 solid;
+	color: #0B92D3;
+	background-color: #fff;
+}
+
 
 /** nav bar **/
 .navbar

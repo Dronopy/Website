@@ -7,13 +7,66 @@
 	<title>Dronopy</title>
 	<link href="img/favicon.png" rel="icon" type="image/x-icon" />
 
-	<link href='http://fonts.googleapis.com/css?family=Dosis|Cabin+Condensed|Oxygen|Fjalla+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Dosis|Cabin+Condensed|Oxygen|Fjalla+One|Muli|Noto Sans|Droid Sans|Lato|Roboto' rel='stylesheet' type='text/css'>
 
 	<link rel="stylesheet" href="vendor/bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="vendor/animate.min.css"/>
 	<link rel="stylesheet" href="css/theme.css"/>
 
 	<!-- need this up here for the fade in for accessibility -->
 	<script src="vendor/jquery-1.11.2.min.js"></script>
+
+	<!-- Analytics Start COMMENTED OUT FOR NOW
+	<script type="text/javascript">
+  		!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","group","track","ready","alias","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="3.0.1";
+  			analytics.load("yM5wpCONfsEMOaX4yuV3k4DTxIc6TD9y");
+  			analytics.page()
+  			}}();
+	</script>
+
+	<script
+  		src="//d2wy8f7a9ursnm.cloudfront.net/bugsnag-2.min.js"
+  		data-apikey="353989f87aae0e052027bbd23be4eeab">
+	</script>
+
+	<script>
+  		window.intercomSettings = {
+    	// TODO: The current logged in user's full name
+    	name: "John Doe",
+    	// TODO: The current logged in user's email address.
+    	email: "john.doe@example.com",
+    	// TODO: The current logged in user's sign-up date as a Unix timestamp.
+    	created_at: 1234567890,
+    	app_id: "g2wkkjv0"
+  		};
+	</script>
+	<script>(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/g2wkkjv0';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()
+	</script>
+
+	<script type="text/javascript" id="inspectletjs">
+		window.__insp = window.__insp || [];
+		__insp.push(['wid', 860159962]);
+		(function() {
+		function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+		if (window.attachEvent){
+			window.attachEvent('onload', __ldinsp);
+		}else{
+			window.addEventListener('load', __ldinsp, false);
+		}
+		})();
+	</script>
+
+    <script type="text/javascript">
+        var _mfq = _mfq || [];
+        (function () {
+        var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true;
+        mf.src = "//cdn.mouseflow.com/projects/d6d98952-a927-40d5-a6a9-c9f3d53e7c16.js";
+        document.getElementsByTagName("head")[0].appendChild(mf);
+      })();
+    </script>
+
+	 Analytics End -->
+
 </head>
 <body>
 
@@ -33,27 +86,145 @@
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="how-it-works.html">How it Works</a></li>
-					<li class="active"><a href="drone-pilots.html">Drone Pilots</a></li>
-					<li><a href="http://drone.sharetribe.com">Find a Drone</a></li>
+					<li><a href="drone-pilots.html">Drone Pilots</a></li>
+					<!--<li><a href="https://drones.dronopy.com">Find a Drone</a></li>-->
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li><button class="btn btn-default navbar-btn" id="login-btn" href="http://drone.sharetribe.com/en/login">Login</button></li>
-					<li><button class="btn btn-primary navbar-btn" id="signup-btn" href="http://drone.sharetribe.com/en/signup">Sign Up</button></li>
+					<li><button class="btn btn-secondary navbar-btn login-btn" href="https://drones.dronopy.com/en/login">Login</button></li>
+					<li><button class="btn btn-default navbar-btn signup-btn" href="https://drones.dronopy.com/en/signup">Sign Up</button></li>
+					<li><button class="btn btn-primary navbar-btn find-btn" href="https://drones.dronopy.com/">Find a Drone</button></li>
 				</ul>
 			</div><!--/.navbar-collapse -->
 		</div>
 	</header>
-	
+
 	<div class="content">
 	<script>$(".content").css('opacity', '0');</script>
 
 		<div class="main-container">
 
-			<div class="container">
+			<div class="container container-top-space">
+
+				<div class="row row-how">
+					<div class="col-sm-4">
+						<div class="img-how img-thumbnail">
+							<img class="animated zoomInDown" src="img/noun_78265_cc.svg" />
+						</div>
+					</div>
+					<div class="col-sm-8">
+						<h2 class="heading-top-flush uline">Who should sign up?</h2>
+						<p>
+							If you own a drone and fly it for fun, it probably just sits there a lot of the time, and this is a way to do more with it in your spare time.  
+						</p>
+						<p>
+							By signup up to be a Drone Pilot in Dronopy, you can do what you enjoy doing, and earn some money, which can be used to buy upgrades, or even a new drone.
+						</p>
+						<p>
+							You can post the types of work you can, and like to do, then people purchase that service from the site, and you arrange a time to perform the work.  You can choose to charge for your services, or volunteer your time, and accept requests from worthy causes.
+						</p>
+						<p>
+							If you run a business that uses drones, you can also list the services you provide on dronopy.
+						</p>
+						<p>
+							Signing up and listing an unlimited amount of services is free.
+						</p>
+					</div>
+				</div>
+				<div class="row row-how">
+					<div class="col-sm-8">
+						<h2 class="heading-top-flush uline">How do i make a listing?</h2>
+						<p>
+							First, Sign Up!  Then, you will need to enter your PayPal information (PayPal is the payment processor used, the payments will go into your PayPal account), and Post a Listing.
+						</p>
+						<p>
+							You can have as many as you’d like, one for each service.  Think of a haircut price list… Haircut $20, Shave $10, Coloring $30, Haircut+Shave+Coloring $50.  Each one would have it’s own listing and description.  
+						</p>
+						<p>
+							Here are some example listings:
+							Link to listing A
+							Link to Listing B
+							link to listing C
+						</p>
+						<p>
+							If you sign up and finding it a challenge to get all your listings up, let us know, we may be able to help.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<img class="img-how img-thumbnail" />
+					</div>
+				</div>
+				<div class="row row-how">
+					<div class="col-sm-4">
+						<img class="img-how img-thumbnail" />
+					</div>
+					<div class="col-sm-8">
+						<h2 class="heading-top-flush uline">Safety</h2>
+						<p>
+							Safety is the top priority, for you, and Drone Pilots.
+						</p>
+						<p>
+							If at any time you or the Pilot feels that something unsafe is happening, either party can put a stop to the activity, and Walk Away.  This includes ‘stunt’ flying, flying too close to people, or violating the privacy of others.
+						</p>
+					</div>
+				</div>
+				<div class="row row-how">
+					<div class="col-sm-8">
+						<h2 class="heading-top-flush uline">Walk Away Guarantee</h2>
+						<p>
+							If you find your experience with the Drone Pilot to be unsatisfactory, for whatever reason, during the flight of the drone, you walk away at any time and receive a full refund.  This is important to ensure that safety is followed at all times, if there is any concerns over the safety of the flight, or of the requests being unsafe, either side end the flight and walk away, without a problem.
+						</p>
+						<p>
+							Even with the great strides in technology and safety (some Drones come with backup flight systems for example), accidents are possible, and most are preventable, it is in everyone’s best interest to minimize the chance of it occurring.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<img class="img-how img-thumbnail" />
+					</div>
+				</div>
+				<div class="row row-how">
+					<div class="col-sm-4">
+						<img class="img-how img-thumbnail" />
+					</div>
+					<div class="col-sm-8">
+						<h2 class="heading-top-flush uline">Do more with Dronopy</h2>
+						<p>
+							Owning and piloting a drone is one thing, doing photo/video or other post processing to get the right, high quality look, is something else.  If you’d like to continue with the piloting part, and let us handle the post processing of images, videos, etc, contact us for details, we’d love to help.
+						</p>
+						<p>
+							Some examples:
+							We can provide the video post production, to put together a professional edited video of the videos
+							We can stitch together photos to provide 3d maps, point maps, and other types of imagery
+						</p>
+					</div>
+				</div>
+				<div class="row row-how">
+					<div class="col-sm-8">
+						<h2 class="heading-top-flush uline">Certification</h2>
+						<p>
+							Certification is an important legal requirement for piloting a drone for money in many areas.  The regulations vary by country, and you are expected to abide by all local laws.  Safety is always a top priority, and should you be asked to do something that seems dangerous, you are free to decline the request, and even Walk Away at any point in time.
+						</p>
+					</div>
+					<div class="col-sm-4">
+						<img class="img-how img-thumbnail" />
+					</div>
+				</div>
+				<div class="row row-how">
+					<div class="col-sm-4">
+						<img class="img-how img-thumbnail" />
+					</div>
+					<div class="col-sm-8">
+						<h2 class="heading-top-flush uline">Are there fees?</h2>
+						<p>
+							Signing up, and listing an unlimited amount of services is free.  For each sale, there is a 4% transaction fee charged by the payment processor, and 15% commission for Dronopy.
+						</p>
+						<p>
+							The model we provide means that you can list as many services with us for free, and we only take a commission of the sales you get.  This means you can set up your listings, and forget it, with no risk, or cost, while we do the work of finding the right customers for you.  If no customers purchase your service, there is no cost to you, and if they do, we take a small fee for finding those customers.
+						</p>
+					</div>
+				</div>	
 
 			</div>
 		</div>
-
 
 
 
