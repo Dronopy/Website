@@ -1,15 +1,6 @@
 var DEBUG = true;
 $(function() {
 
-	$(".login-btn").click(function(e) {
-		window.location.href = "https://drones.dronopy.com/en/login";
-	});
-	$(".signup-btn").click(function(e) {
-		window.location.href = "https://drones.dronopy.com/en/signup";
-	});
-	$(".find-btn").click(function(e) {
-		window.location.href = "https://drones.dronopy.com/";
-	});
 	$("#alert-close").click(function(e) {
 		hideAlert();
 	});

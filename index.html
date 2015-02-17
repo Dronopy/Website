@@ -7,14 +7,253 @@
 	<title>Dronopy</title>
 	<link href="img/favicon.png" rel="icon" type="image/x-icon" />
 
-	<link href='http://fonts.googleapis.com/css?family=Dosis|Cabin+Condensed|Oxygen|Fjalla+One|Muli|Noto Sans|Droid Sans|Lato|Roboto' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="vendor/bootstrap-3.3.2-dist/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css"/>
 	<link rel="stylesheet" href="vendor/animate.min.css"/>
 	<link rel="stylesheet" href="css/theme.css"/>
 
 	<!-- need this up here for the fade in for accessibility -->
 	<script src="vendor/jquery-1.11.2.min.js"></script>
+
+</head>
+<body>
+
+	<header class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<span class="active">
+					<a class="navbar-brand" href="index.html"><img alt="Dropnopy" src="img/logo.png"></a>
+				</span>
+			</div>
+			<div class="navbar-collapse collapse">
+				<ul class="nav navbar-nav">
+					<li><a class="nav-link-underline" href="how-it-works.html">How it Works</a></li>
+					<li><a class="nav-link-underline" href="drone-pilots.html">Drone Pilots</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a class="nav-link-tertiary" href="https://drones.dronopy.com/en/login">Login</a></li>
+					<li><a class="nav-link-default" href="https://drones.dronopy.com/en/signup">Sign Up</a></li>
+					<li><a class="nav-link-primary" href="https://drones.dronopy.com/">Find a Drone</a></li>
+				</ul>
+			</div><!--/.navbar-collapse -->
+		</div>
+	</header>
+
+	<div id="alert-container">
+	<div id="alert" class="alert alert-success alert-dismissible fade" role="alert" style="display: none">
+		<button type="button" class="close" id="alert-close" aria-label="Close">
+			<span aria-hidden="true">&times;</span>
+		</button>
+		<span class="alert-text" id="alert-text"></span>
+	</div>
+	</div>
+
+	<div class="content">
+	<script>$(".content").css('opacity', '0');</script>
+
+		<div class="main-container">
+			<div class="jumbotron homejumbo text-center">
+				<video id="sampleMovie" src="img/6095144.mp4" autoplay loop></video>
+
+				<div class="homejumbotext">
+					<div>
+						<h1>Hire a Drone</h1>
+						<p>
+							<a class="btn btn-default btn-lg" role="button" href="https://drones.dronopy.com/en/signup">Sign Up</a>
+							<a class="btn btn-primary btn-lg" role="button" href="https://drones.dronopy.com">Find a Drone</a>
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-panel bg-panel-default flush-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1 class="text-center heading-top-flush">What is Dronopy?</h1>
+							<p>
+								Use Dronopy to find a Drone (pilot included), to take videos of your house, make a full aerial map of your farm, add unbelievable shots to your wedding videos, and much more.
+							</p>
+							<p>
+								Dronopy is a marketplace that connects you with Drone Pilots.  The experienced Drone Pilots offer a wide range of services using their drones.
+							</p>
+							<p class="text-center"><a class="btn btn-big" role="button" href="how-it-works.html">Find a Drone</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-panel bg-panel-primary">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4">
+							<h1 class="heading-top-flush">Many possibilities</h1>
+							<p>
+								Some examples:
+							</p>
+							<ul>
+								<li>Videos of your home or property</li>
+								<li>Making aerial maps of your farm (like Google Maps)</li>
+								<li>Aerial videos and pictures of special events</li>
+								<li>Advanced infrared and 3D models from the air</li>
+							</ul>
+							<p class="text-right"><a class="btn btn-primary" role="button" href="how-it-works.html">Learn More</a></p>
+						</div>
+						<div class="col-sm-8">
+							<img class="img-tall img-thumbnail" />
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-panel bg-panel-default">
+				<div class="container">
+					<h1 class="text-center heading-top-flush">Who are the Drone Pilots?</h1>
+					<div class="row row-spacer">
+						<div class="col-sm-4">
+							<div class="img-basic img-thumbnail">
+								<img src="img/noun_78265_cc.svg" />
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<h2 class="heading-top-flush uline">Enthusiasts</h2>
+							<p>
+								The Personal Drone Pilots are normal people, who enjoy piloting drones for personal enjoyment, have gained significant expertise by doing this, and are now offering that expertise to others.  They do this in their spare time, and charge a fee.
+							</p>
+						</div>
+					</div>
+					<div class="row row-spacer">
+						<div class="col-sm-8">
+							<h2 class="heading-top-flush uline">Volunteers</h2>
+							<p>
+								The Volunteer Drone Pilots are offering their services for free to a good cause.  They are normal people, who are donating their time, and the use of their drones, to help non-profits, church groups, parks services, and any other good cause.
+							</p>
+						</div>
+						<div class="col-sm-4">
+							<div class="img-basic img-thumbnail">
+								<img src="img/noun_78265_cc.svg" />
+							</div>
+						</div>
+					</div>
+					<div class="row row-spacer">
+						<div class="col-sm-4">
+							<div class="img-basic img-thumbnail">
+								<img src="img/noun_78265_cc.svg" />
+							</div>
+						</div>
+						<div class="col-sm-8">
+							<h2 class="heading-top-flush uline">Businesses</h2>
+							<p>
+								The Business Drone Pilots are professionals who do this for a living, and can perform the most sophisticated and elaborate tasks with drones.  
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="bg-panel bg-panel-secondary">
+				<div class="container">
+					<h1 class="text-center heading-top-flush">All kinds of Drones</h1>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="img-thumbnail img-basic">
+								<img class="do-wobble" src="img/noun_78265_cc.svg" />
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="img-thumbnail img-basic">
+								<img class="do-wobble" src="img/noun_78265_cc.svg" />
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="img-thumbnail img-basic">
+								<img class="do-wobble" src="img/noun_78265_cc.svg" />
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-panel bg-panel-default">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12">
+							<h1 class="text-center heading-top-flush">Didn’t find the Drone you were looking for?</h1>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-10 col-sm-offset-1 col-md-6 col-md-offset-3">
+							<p>If you had trouble finding what you were looking for on the site, drop us a line with a description of what you need, and we’ll do our best to find it for you!</p>
+
+							<form id="contactform" class="form-horizontal">
+								<div class="form-group">
+									<label for="formName" class="control-label col-sm-4">Name</label>
+									<div class="col-sm-8">
+									<input type="text" class="form-control" id="formName" name="formName" placeholder="Enter name" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="formEmail" class="control-label col-sm-4">Email Address</label>
+									<div class="col-sm-8">
+									<input type="email" class="form-control" id="formEmail" name="formEmail" placeholder="Enter email" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="formPhone" class="control-label col-sm-4">Phone (optional)</label>
+									<div class="col-sm-8">
+									<input type="tel" class="form-control" id="formPhone" name="formPhone" placeholder="Enter phone" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="formLocation" class="control-label col-sm-4">Location</label>
+									<div class="col-sm-8">
+									<input type="text" class="form-control" id="formLocation" name="formLocation" placeholder="Enter location" />
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="formDescription" class="control-label col-sm-4">Description</label>
+									<div class="col-sm-8">
+									<textarea class="form-control" rows="5" id="formDescription" name="formDescription" maxlength="500" placeholder="For example: Hi, Our family house has been standing for 200yrs, we are selling the house, and we want to have a video and photos made of it from the air, so we can remember it forever."></textarea>
+									</div>
+								</div>
+								<button id="submitBtn" type="submit" class="btn btn-secondary pull-right">Submit</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+
+
+		<footer>
+			<div class="navbar navbar-default">
+			<div class="container">
+				<ul class="nav navbar-nav">
+					<li><p class="navbar-text">&copy; Dronopy 2014</p></li>
+					<li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
+					<li><a href="privacy-policy.html">Privacy Policy</a></li>
+				</ul>
+			</div> <!-- /container -->
+			</div>
+		</footer>
+		<script>$("footer").css('opacity', '0');</script>
+
+	</div>
+
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="vendor/jquery.form.min.js"></script>
+	<script src="vendor/jquery.validate.min.js"></script>
+	<script src="js/script.js"></script>
 
 	<!-- Analytics Start COMMENTED OUT FOR NOW
 	<script type="text/javascript">
@@ -66,307 +305,6 @@
     </script>
 
 	 Analytics End -->
-
-</head>
-<body>
-
-
-	<header class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<span class="active">
-					<a class="navbar-brand" href="index.html"><img alt="Dropnopy" src="img/logo.png"></a>
-				</span>
-			</div>
-			<div class="navbar-collapse collapse">
-				<ul class="nav navbar-nav">
-					<li><a href="how-it-works.html">How it Works</a></li>
-					<li><a href="drone-pilots.html">Drone Pilots</a></li>
-					<!--<li><a href="https://drones.dronopy.com">Find a Drone</a></li>-->
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><button class="btn btn-secondary navbar-btn login-btn" href="https://drones.dronopy.com/en/login">Login</button></li>
-					<li><button class="btn btn-default navbar-btn signup-btn" href="https://drones.dronopy.com/en/signup">Sign Up</button></li>
-					<li><button class="btn btn-primary navbar-btn find-btn" href="https://drones.dronopy.com/">Find a Drone</button></li>
-				</ul>
-			</div><!--/.navbar-collapse -->
-		</div>
-	</header>
-
-	<div id="alert-container">
-	<div id="alert" class="alert alert-success alert-dismissible fade" role="alert" style="display: none">
-		<button type="button" class="close" id="alert-close" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-		</button>
-		<span class="alert-text" id="alert-text"></span>
-	</div>
-	</div>
-
-	<div class="content">
-	<script>$(".content").css('opacity', '0');</script>
-
-		<div class="main-container">
-			<div class="jumbotron homejumbo text-center">
-				<video id="sampleMovie" src="img/6095144.mp4" autoplay loop></video>
-
-				<div class="homejumbotext">
-				<div>
-				<h1>Hire a Drone</h1>
-				<p>
-					<a class="btn btn-default btn-lg" role="button" href="https://drones.dronopy.com/en/signup">Sign Up</a>
-					<a class="btn btn-primary btn-lg" role="button" href="https://drones.dronopy.com">Find a Drone</a>
-				</p>
-				</div>
-				</div>
-			</div>
-
-			<div class="bg-panel bg-panel-default flush-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-20">
-							<h2 class="text-center heading-top-flush">What is Dronopy?</h2>
-							<p>
-								Use Dronopy to find a Drone (pilot included), to take videos of your house, make a full aerial map of your farm, add unbelievable shots to your wedding videos, and much more.
-							</p>
-							<p>
-								Dronopy is a marketplace that connects you with Drone Pilots.  The experienced Drone Pilots offer a wide range of services using their drones.
-							</p>
-							<a class="btn btn-big" role="button" href="how-it-works.html">Find a Drone</a>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="bg-panel bg-panel-primary">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-3">
-							<h2 class="heading-top-flush">Many possibilities</h2>
-							<p>
-								Some examples:
-							</p>
-							<ul>
-								<li>Videos of your home or property</li>
-								<li>Making aerial maps of your farm (like Google Maps)</li>
-								<li>Aerial videos and pictures of special events</li>
-								<li>Advanced infrared and 3D models from the air</li>
-							</ul>
-							<a class="btn btn-primary pull-right" role="button" href="how-it-works.html">Learn More</a>
-						</div>
-						<div class="col-sm-9">
-							<div class="row">
-								<div class="col-sm-9">
-									<img class="img-tall img-thumbnail" />
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<div class="main-container">
-
-			<div class="container container-top-space">
-				<h1 class="text-center heading-top-flush">Who are the Drone Pilots?</h1>
-				<div class="row row-how">
-					<div class="col-sm-4">
-						<div class="img-how img-thumbnail">
-							<img class="animated zoomInDown" src="img/noun_78265_cc.svg" />
-						</div>
-					</div>
-					<div class="col-sm-8">
-						<h2 class="heading-top-flush uline">People in their spare time</h2>
-						<p>
-							The Personal Drone Pilots are normal people, who enjoy piloting drones for personal enjoyment, have gained significant expertise by doing this, and are now offering that expertise to others.  They do this in their spare time, and charge a fee.
-						</p>
-					</div>
-				</div>
-				<div class="row row-how">
-					<div class="col-sm-8">
-						<h2 class="heading-top-flush uline">Volunteers</h2>
-						<p>
-							The Volunteer Drone Pilots are offering their services for free to a good cause.  They are normal people, who are donating their time, and the use of their drones, to help non-profits, church groups, parks services, and any other good cause.
-						</p>
-					</div>
-					<div class="col-sm-4">
-						<img class="img-how img-thumbnail" />
-					</div>
-				</div>
-				<div class="row row-how">
-					<div class="col-sm-4">
-						<img class="img-how img-thumbnail" />
-					</div>
-					<div class="col-sm-8">
-						<h2 class="heading-top-flush uline">Businesses</h2>
-						<p>
-							The Business Drone Pilots are professionals who do this for a living, and can perform the most sophisticated and elaborate tasks with drones.  
-						</p>
-					</div>
-				</div>
-
-			</div>
-		</div>
-
-
-			<div class="bg-panel bg-panel-secondary">
-				<div class="container">
-					<h1 class="text-center heading-top-flush">All kinds of Drones</h1>
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="img-thumbnail img-how">
-								<img class="do-wobble" src="img/noun_78265_cc.svg" />
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="img-thumbnail img-how">
-								<img class="do-wobble" src="img/noun_78265_cc.svg" />
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="img-thumbnail img-how">
-								<img class="do-wobble" src="img/noun_78265_cc.svg" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<!--<div class="bg-panel bg-panel-secondary">
-				<div class="container">
-					<h1 class="text-center heading-top-flush">Who are the Drone Pilots?</h1>
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="row">
-								<div class="col-sm-6">
-									<img class="img-how img-thumbnail" />
-								</div>
-								<div class="col-sm-6">
-									<h2 class="heading-top-flush">People</h2>
-									<p>
-										The Personal Drone Pilots are normal people, who enjoy piloting drones for personal enjoyment, have gained significant expertise by doing this, and are now offering that expertise to others.  They do this in their spare time, and charge a fee.
-									</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-6 col-sm-offset-6">
-									<a class="btn btn-primary btn-block" role="button" href="how-it-works.html">Learn More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="row">
-								<div class="col-sm-6">
-									<img class="img-how img-thumbnail" />
-								</div>
-								<div class="col-sm-6">
-									<h2 class="heading-top-flush">Volunteers</h2>
-									<p>
-										The Volunteer Drone Pilots are offering their services for free to a good cause.  They are normal people, who are donating their time, and the use of their drones, to help non-profits, church groups, parks services, and any other good cause.
-									</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-6 col-sm-offset-6">
-									<a class="btn btn-primary btn-block" role="button" href="how-it-works.html">Learn More</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-sm-4">
-							<div class="row">
-								<div class="col-sm-6">
-									<img class="img-how img-thumbnail" />
-								</div>
-								<div class="col-sm-6">
-									<h2 class="heading-top-flush">Businesses</h2>
-									<p>
-										The Business Drone Pilots are professionals who do this for a living, and can perform the most sophisticated and elaborate tasks with drones.  
-									</p>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-sm-6 col-sm-offset-6">
-									<a class="btn btn-primary btn-block" role="button" href="how-it-works.html">Learn More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>-->
-
-			<div class="bg-panel bg-panel-default">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-6 col-sm-offset-3">
-							<h1 class="heading-top-flush">Didn’t find the Drone you were looking for?</h1>
-							<p>If you had trouble finding what you were looking for on the site, drop us a line with a description of what you need, and we’ll do our best to find it for you!</p>
-
-							<form id="contactform" class="form-horizontal">
-								<div class="form-group">
-									<label for="formName" class="control-label col-sm-3">Name</label>
-									<div class="col-sm-9">
-									<input type="text" class="form-control" id="formName" name="formName" placeholder="Enter name" />
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="formEmail" class="control-label col-sm-3">Email Address</label>
-									<div class="col-sm-9">
-									<input type="email" class="form-control" id="formEmail" name="formEmail" placeholder="Enter email" />
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="formPhone" class="control-label col-sm-3">Phone (optional)</label>
-									<div class="col-sm-9">
-									<input type="tel" class="form-control" id="formPhone" name="formPhone" placeholder="Enter phone" />
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="formLocation" class="control-label col-sm-3">Location</label>
-									<div class="col-sm-9">
-									<input type="text" class="form-control" id="formLocation" name="formLocation" placeholder="Enter location" />
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="formDescription" class="control-label col-sm-3">Description</label>
-									<div class="col-sm-9">
-									<textarea class="form-control" rows="5" id="formDescription" name="formDescription" maxlength="500" placeholder="For example: Hi, Our family house has been standing for 200yrs, we are selling the house, and we want to have a video and photos made of it from the air, so we can remember it forever."></textarea>
-									</div>
-								</div>
-								<button id="submitBtn" type="submit" class="btn btn-primary pull-right">Submit</button>
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-
-
-		</div>
-
-
-		<footer>
-			<div class="navbar navbar-default">
-			<div class="container">
-				<ul class="nav navbar-nav">
-					<li><p class="navbar-text">&copy; Dronopy 2014</p></li>
-					<li><a href="terms-and-conditions.html">Terms and Conditions</a></li>
-					<li><a href="privacy-policy.html">Privacy Policy</a></li>
-				</ul>
-			</div> <!-- /container -->
-			</div>
-		</footer>
-		<script>$("footer").css('opacity', '0');</script>
-
-	</div>
-
-	<script src="vendor/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
-	<script src="vendor/jquery.form.min.js"></script>
-	<script src="vendor/jquery.validate.min.js"></script>
-	<script src="js/script.js"></script>
 
 </body>
 </html>
