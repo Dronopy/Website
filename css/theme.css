@@ -480,3 +480,34 @@ footer .navbar .navbar-nav>li>a:hover
 {
 	margin-bottom: 20px;
 }
+
+.carousel
+{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.carousel .carousel-inner .item
+{
+	line-height: 0px;
+}
+.carousel .carousel-indicators
+{
+	bottom: 0px;
+}
+.carousel .carousel-control
+{
+	width: 10%;
+}
+.carousel .carousel-control .arrow
+{
+	position: absolute;
+	top: 50%;
+	font-weight: bolder;
+	font-size: 30px;
+	height: 30px;
+	margin-top: -15px;
+}
+.carousel .carousel-control.right .arrow
+{
+	margin-left: -22px;
+}
