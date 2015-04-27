@@ -4,15 +4,15 @@
  * Some validation from: http://www.freecontactform.com/email_form.php
  */
 
-	$DEBUG = true;
+	$DEBUG = false;
 
 	$data = $_REQUEST;
 
 	if ($DEBUG)
 	{
 		$data = array(
-			'formEmail'=> 'annieperrier@gmail.com',
-			'formName'=> 'Annie',
+			'formEmail'=> 'tester@dronopy.com',
+			'formName'=> 'Auto Tester',
 			'formLocation'=>'Canada',
 			'formDescription'=>'Testing the form'
 		);
@@ -145,7 +145,7 @@
 		return $message;
 	}
 
-	$to = "annieperrier@gmail.com";
+	$to = "support@dronopy.com";
 	$subject = "Dronopy Contact Form Submission";
 
 	$headers = 'From: "Dronopy Contact Form" <contactform@dropnopy.com>' . "\r\n" .
